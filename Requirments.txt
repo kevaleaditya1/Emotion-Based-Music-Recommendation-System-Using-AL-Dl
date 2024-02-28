@@ -1,0 +1,7 @@
+Mediapipe
+TensorFlow
+keras.models
+numpy
+av
+netifaces
+streamlit
