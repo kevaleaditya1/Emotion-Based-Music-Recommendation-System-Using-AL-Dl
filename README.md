@@ -1,5 +1,5 @@
 
-                                     ------------------------Introduction------------------------
+                              ------------------------Introduction------------------------
 
 Mood detection based on emotion is the one of the current topic in the various fields which provides solution to various
 challenges. Beside traditional challenges in captured facial images under uncontrolled settings such as varying poses,
