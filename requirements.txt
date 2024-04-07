@@ -4,5 +4,4 @@ av
 cv
 numpy
 keras.models
-keras.layers
 tensorflow
