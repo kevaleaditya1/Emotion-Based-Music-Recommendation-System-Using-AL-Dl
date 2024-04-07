@@ -1,7 +1,7 @@
 import streamlit as st
 from streamlit_webrtc import webrtc_streamer
 import av
-import cv2 as cs
+import cv2 
 import numpy as np 
 import mediapipe as mp 
 from keras.models import load_model
@@ -34,9 +34,9 @@ class EmotionProcessor:
 		frm = frame.to_ndarray(format="bgr24")
 
 		##############################
-		frm = cs.flip(frm, 1)
+		frm = cv2.flip(frm, 1)
 
-		res = holis.process(cs.cvtColor(frm, cs.COLOR_BGR2RGB))
+		res = holis.process(cv2.cvtColor(frm, cv2.COLOR_BGR2RGB))
 
 		lst = []
 
@@ -66,7 +66,7 @@ class EmotionProcessor:
 			pred = label[np.argmax(model.predict(lst))]
 
 			print(pred)
-			cs.putText(frm, pred, (50,50),cs.FONT_ITALIC, 1, (255,0,0),2)
+			cv2.putText(frm, pred, (50,50),cv2.FONT_ITALIC, 1, (255,0,0),2)
 
 			np.save("emotion.npy", np.array([pred]))
 
