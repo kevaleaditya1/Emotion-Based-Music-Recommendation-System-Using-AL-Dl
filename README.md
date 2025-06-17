@@ -47,11 +47,38 @@ This system uses facial emotion recognition to understand your current mood and 
    ```bash
    git clone https://github.com/kevaleaditya1/Emotion-Based-Music-Recommendation-System-Using-AL-Dl.git
    cd Emotion-Based-Music-Recommendation-System-Using-AL-Dl
-2.**Install Dependency**
-```bash
-    pip install -r requirements.txt
+2. **Install Dependency**
+   ```bash
+   pip install -r requirements.txt
+3. **Run Project**
+    ```bash
+    streamlit run app.py
+---
+1. **Launch the App**  
+   The user runs `app.py` which opens a Streamlit web interface.
 
-3.**Run the Project
-   streamlit run app.py
+2. **Capture Emotion**  
+   - Click the **"Capture Emotion"** button.
+   - The webcam activates and captures live video.
+   - A Haar Cascade Classifier detects your face.
+   - The detected face is passed to a **CNN model (`model.h5`)** to classify emotions like:
+     - Happy
+     - Sad
+     - Angry
+     - Neutral
+     - etc.
 
+3. **Recommend a Song**  
+   - After emotion is detected, click the **"Recommend Song"** button.
+   - The app redirects you to a **YouTube music link** that matches your emotion.
+---
+## 💡 Future Improvements
+- Integrate Spotify or YouTube APIs.
 
+- Improve frontend using Streamlit components or WebRTC.
+
+- Add logging and user analytics. 
+---
+## Paper Published 
+
+- [Check Here](https://ijircce.com/admin/main/storage/app/pdf/19z8eZ6fMsx5RQrEDZPTwxNrYG8GvTf7r7FhSNxB.pdf)
