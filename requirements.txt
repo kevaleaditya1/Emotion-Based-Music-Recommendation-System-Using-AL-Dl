@@ -1,8 +1,7 @@
 streamlit
-streamlit_webrtc
+streamlit-webrtc
 av
 mediapipe
-cv
+opencv-python
 numpy
-keras.models
 tensorflow
