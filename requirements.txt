@@ -3,5 +3,6 @@ streamlit-webrtc
 av
 mediapipe
 opencv-python
-numpy
+numpy==1.26.4
 tensorflow
+
